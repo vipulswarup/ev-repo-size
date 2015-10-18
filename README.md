@@ -6,3 +6,5 @@ It is broken down into two projects :
 	2. reposize-share
 
 This project is a copy of work from **Chris Paul** hosted on [Github!](https://github.com/cmpaul/reposize). It has been modified to use Alfresco Maven SDK 2.1.0 and built on top of Alfresco 5.0.d.
+
+Modifications done by team at www.eisenvault.com
