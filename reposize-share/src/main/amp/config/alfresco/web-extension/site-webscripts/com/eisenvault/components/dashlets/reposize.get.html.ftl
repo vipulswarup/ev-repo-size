@@ -32,24 +32,7 @@
     			<td class="reposize-margin-column">&nbsp;</td>
     			<td class="header reposize-value-column"><h4 class="theme-color-2">${msg("label.size")} (<span id="${args.htmlid}-reposize-units">${units?string!'B'}</span>)</h4></td>
    			</tr>
-   			<tr>
-   				<td>&nbsp;</td>
-   				<td><span id="${args.htmlid}-contentStore-label">${msg("label.contentStore")}</span></td>
-   				<td>&nbsp;</td>
-   				<td><span id="${args.htmlid}-reposize-contentStoreSize"></span></td>
-    		</tr>
-    		<tr>
-    			<td>&nbsp;</td>
-   				<td><span id="${args.htmlid}-indexes-label">${msg("label.indexes")}</span></td>
-   				<td>&nbsp;</td>
-   				<td><span id="${args.htmlid}-reposize-indexesSize"></span></td>
-    		</tr>
-    		<tr>
-    			<td>&nbsp;</td>
-   				<td><span id="${args.htmlid}-indexesBackup-label">${msg("label.indexesBackup")}</span></td>
-   				<td>&nbsp;</td>
-   				<td><span id="${args.htmlid}-reposize-indexesBackupSize"></span></td>
-    		</tr>
+   			
     		<tr>
     			<td>&nbsp;</td>
     			<td>${msg("label.freeSpace")}</td>
