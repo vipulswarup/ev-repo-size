@@ -1,10 +1,10 @@
 {
-	"contentStorePath" : "${contentStorePath!}",
-	"contentStoreSize" : ${((contentStoreSize)?c)!0},
-	"storeFreeSpace" : ${((storeFreeSpace)?c)!0},
-	"storeTotalSpace" : ${((storeTotalSpace)?c)!0},
-	"indexesPath" : "${indexesPath!}",
-	"indexesSize" : ${((indexesSize)?c)!0},
-	"indexesBackupPath" : "${indexesBackupPath!}",
-	"indexesBackupSize" : ${((indexesBackupSize)?c)!0}
+	"contentStorePath" : "${contentStorePath}",
+	"contentStoreSize" : ${contentStoreSize?c},
+	"storeFreeSpace" : ${storeFreeSpace?c},
+	"storeTotalSpace" : ${storeTotalSpace?c},
+	"indexesPath" : "${indexesPath}",
+	"indexesSize" : ${indexesSize?c},
+	"indexesBackupPath" : "${indexesBackupPath}",
+	"indexesBackupSize" : ${indexesBackupSize?c}
 }

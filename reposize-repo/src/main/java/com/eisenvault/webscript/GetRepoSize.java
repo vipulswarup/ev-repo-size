@@ -16,8 +16,7 @@ import org.springframework.extensions.webscripts.Status;
 import org.springframework.extensions.webscripts.WebScriptRequest;
 
 public class GetRepoSize extends DeclarativeWebScript {
-private static Logger logger = Logger.getLogger(GetRepoSize.class);
-	
+	private static Logger logger = Logger.getLogger(GetRepoSize.class);
 	private Properties globalProperties;
 	private ContentService contentService;
 	
@@ -30,12 +29,12 @@ private static Logger logger = Logger.getLogger(GetRepoSize.class);
 	
 	@Override
 	protected Map<String, Object> executeImpl(WebScriptRequest req,Status status, Cache cache) {
+		
 		if(logger.isDebugEnabled()){
 			logger.debug("Entering GetRepoSize.executeImpl ...... ");
 		}
 		
 		Map<String, Object> model = new HashMap<String, Object>();
-		
 		MapConfiguration config = (MapConfiguration) ConfigurationConverter.getConfiguration(globalProperties);
 		Configuration initConfig = config.interpolatedConfiguration();
 		
@@ -48,8 +47,8 @@ private static Logger logger = Logger.getLogger(GetRepoSize.class);
 			logger.debug("Indexes ........... " + indexes);
 			logger.debug("IndexesBAckup ..... " + indexesBackup);
 		}
-		
 		try{
+		
 			long storeFreeSpace = contentService.getStoreFreeSpace();
 			long storeTotalSpace = contentService.getStoreTotalSpace();
 			
@@ -80,7 +79,7 @@ private static Logger logger = Logger.getLogger(GetRepoSize.class);
 			model.put("indexesSize", indexesSize);
 			model.put("indexesBackupPath", indexesBackup);
 			model.put("indexesBackupSize", indexesBackupSize);
-
+			
 		}catch(Exception e){
 			logger.error("Exception encountered during GetRepoSize webscript processing: ", e);
 			status.setCode(Status.STATUS_INTERNAL_SERVER_ERROR);
